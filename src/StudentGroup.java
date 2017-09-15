@@ -92,7 +92,7 @@ public class StudentGroup implements StudentArrayOperation {
 		Student[] tempArray = new Student[students.length + 1];
 		System.arraycopy(students, 0, tempArray, 0, index);
 		tempArray[index] = student;
-		System.arraycopy(students, index + 1, tempArray, 0, students.length - index);
+		System.arraycopy(students, index, tempArray, index + 1, students.length - index);
 		students = tempArray;
 	}
 
